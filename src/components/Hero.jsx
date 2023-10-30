@@ -5,7 +5,7 @@ import Eclipse800 from "../assets/Ellipse-2-p-800.png";
 const Hero = () => {
   return (
     <div
-      className={`gap-10 md:flex h-[100vh] justify-center items-center `}
+      className={` gap-10 md:flex md:h-[100vh] justify-center items-center`}
       style={{
         background: `url(${Eclipse800}) no-repeat center center/cover fixed`,
       }}

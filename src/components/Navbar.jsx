@@ -2,42 +2,54 @@ import React, { useState } from "react";
 import logo from "../assets/Main.png";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const setToggele = () => {
-    setOpen(!open);
-  };
+  let Links = [
+    { name: "Home", link: "/" },
+    { name: "Blogs", link: "/" },
+    { name: "E-books", link: "/" },
+  ];
+  let [open, setOpen] = useState(false);
   return (
-    <div className="flex bg-white top-0 sticky justify-between px-1 py-2 border-b-2">
-      <div className="flex gap-1 items-center md:mx-[120px]">
-        <img src={logo} alt="logo" />
-        <h1 className="text-3xl text-green-500 font-[500] hover:text-green-600">
-          SolidHire
-        </h1>
-      </div>
-      <div className="md:flex hidden gap-10 mx-2 p-3 md:mr-[120px]">
+    <div className="shadow-md w-full sticky top-0 left-0">
+      <div className="md:flex md:px-10 items-center justify-between bg-white py-4 ">
+        <div className="flex gap-1 items-center">
+          <img src={logo} alt="logo" />
+          <h1 className="text-3xl text-green-500  hover:text-green-600">
+            SolidHire
+          </h1>
+        </div>
+
         <div
-          onClick={() => setToggele}
-          className="md:hidden text-3xl absolute right-8 cursor-pointer hover"
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
-        <ul className="flex gap-10 pt-1">
-          <li>
-            {" "}
-            <a href="#">Home</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#">Blogs</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#">E-books</a>
-          </li>
+
+        <ul
+          className={`md:flex md:items-center text-center md:pb-0 pb-12 absolute md:static bg-white  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 px-5 transition-all  duration-500 ease-in ${
+            open ? "top-20 " : "top-[-400px]"
+          }`}
+        >
+          {Links.map((link) => (
+            <li
+              key={link.name}
+              className="md:ml-8 md:my-0 my-8 md:hover:-translate-y-1"
+              style={{
+                transition: 0.3,
+              }}
+            >
+              <a href={link.link} className="text-gray-800 hover:text-gray-400">
+                {link.name}
+              </a>
+            </li>
+          ))}
+          <div
+            className="bg-green-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-green-800 
+              duration-500"
+          >
+            <button>Get Started</button>
+          </div>
         </ul>
-        <button className="m-0 px-[20px] py-[5px] rounded-lg text-white bg-green-500">
-          Get Early Access
-        </button>
       </div>
     </div>
   );
