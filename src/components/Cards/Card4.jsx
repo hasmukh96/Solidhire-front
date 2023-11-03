@@ -3,7 +3,7 @@ import form1 from "./assets/form1.png";
 const Card4 = () => {
   return (
     <div className="bg-[#e6ff9e]">
-      <div className="flex  md:flex-row flex-col md:py-[100px] py-[60px] md:mx-[150px] mx-4 md:justify-between justify-center items-center gap-[3rem]">
+      <div className="flex  md:flex-row flex-col md:py-[100px] py-[60px] md:mx-[150px] mx-7 md:justify-between justify-center items-center gap-[3rem]">
         <div className=" ">
           <img
             src={form1}

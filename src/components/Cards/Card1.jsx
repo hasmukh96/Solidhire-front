@@ -2,7 +2,7 @@ import React from "react";
 import card3 from "./assets/card3.png";
 const Card1 = () => {
   return (
-    <div className="flex md:flex-row flex-col-reverse md:py-[100px] py-[60px]  mt-1 md:mx-[150px] mx-0 justify-center md:mb-[0] gap-10 items-center">
+    <div className="flex md:flex-row flex-col-reverse md:py-[100px] py-[60px]  mt-1 md:mx-[150px] mx-7 md:px-0 px-2 justify-center md:mb-[0] gap-10 items-center">
       <div className="md:flex md:flex-col md:text-left text-center">
         <p>Custom Career page</p>
         <h2 className="text-4xl my-2 font-bold">

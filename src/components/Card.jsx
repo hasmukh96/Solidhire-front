@@ -4,7 +4,7 @@ import lime from "../assets/Lime-Shape-1.svg";
 
 const Card = () => {
   return (
-    <div className="bg-green-500 flex text-white justify-center items-center pl-[6rem] h-[40vh] text-center">
+    <div className="bg-[#3ac63f] flex text-white justify-center items-center pl-[6rem] h-[40vh] text-center">
       <h1 className="md:text-5xl text-3xl">
         "Makes it extremely easy to manage hiring"
       </h1>
