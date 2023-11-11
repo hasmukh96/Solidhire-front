@@ -6,7 +6,7 @@ import logo4 from "../assets/logo4.png";
 
 const Companies = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 shadow-xl ">
       <div className="container mx-auto md:py-12 py-8 text-center">
         <div className="container mx-auto p-3 text-center">
           <h2 className="text-4xl">Used at companies you know.</h2>
