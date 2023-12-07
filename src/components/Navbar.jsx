@@ -6,7 +6,7 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Blogs", link: "/blog" },
-    { name: "E-books", link: "/ebooks" },
+    { name: "E-books", link: "/ebooks" }
   ];
   let [open, setOpen] = useState(false);
   const menuRef = useRef(null);
@@ -84,7 +84,7 @@ const Navbar = () => {
             className="bg-green-600 text-white py-2 px-6 rounded md:ml-8 hover:bg-green-800 hover:-translate-y-1
               duration-300"
           >
-            <button>Get Started</button>
+            <button onClick={() => window.open("https://app.solidhire.io")}>Get Started</button>
           </div>
         </ul>
       </div>
