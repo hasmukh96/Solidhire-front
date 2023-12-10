@@ -25,7 +25,7 @@ const Hero = () => {
           now and see why our users hire 5x faster with SolidHire!
         </p>
         <div className="mt-[-30px]">⭐⭐⭐⭐⭐</div>
-        <button onClick={() => window.open("https://app.solidhire.io")} className="m-0 md:px-[50px] py-[10px] rounded-lg text-white bg-green-500 duration-300 hover:bg-green-700 sm:w-[50%]">
+        <button className="m-0 md:px-[50px] py-[10px] rounded-lg text-white bg-green-500 duration-300 hover:bg-green-700 sm:w-[50%]">
           Get Free Early Access
         </button>
       </div>

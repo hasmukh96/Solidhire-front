@@ -3,7 +3,7 @@ import removebg from "../assets/removebg.png";
 
 const Ebooks_hero = () => {
   return (
-    <div className="flex md:flex-row flex-col  md:text-justify md:mx-auto m-[2rem] text-center justify-center items-center md:h-[100vh] gap-10 flex-1">
+    <div className="flex md:flex-row flex-col  md:text-left md:mx-auto m-[2rem] text-center justify-center items-center md:h-[100vh] gap-10 flex-1">
       <div className="flex flex-col md:w-[50%] gap-6">
         <h1 className="text-5xl font-bold ">
           Transform Your Startup's HR Practices with Our Comprehensive Guide

@@ -362,29 +362,33 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiTitleTitle extends Schema.CollectionType {
-  collectionName: 'titles';
+export interface ApiBlogsPageBlogsPage extends Schema.CollectionType {
+  collectionName: 'blogs_pages';
   info: {
-    singularName: 'title';
-    pluralName: 'titles';
-    displayName: 'Title';
+    singularName: 'blogs-page';
+    pluralName: 'blogs-pages';
+    displayName: 'BlogsPage';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.RichText;
+    Title: Attribute.String;
+    Description: Attribute.Text;
+    published: Attribute.Date;
+    BlogContent: Attribute.Component<'database.blogs'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::title.title',
+      'api::blogs-page.blogs-page',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::title.title',
+      'api::blogs-page.blogs-page',
       'oneToOne',
       'admin::user'
     > &
@@ -717,7 +721,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::title.title': ApiTitleTitle;
+      'api::blogs-page.blogs-page': ApiBlogsPageBlogsPage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_database_blogs",
+  "info": {
+    "displayName": "Blogs",
+    "icon": "manyToOne"
+  },
+  "options": {},
+  "attributes": {
+    "BlogTitle": {
+      "type": "string"
+    },
+    "BlogDescription": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "text"
+    }
+  }
+}

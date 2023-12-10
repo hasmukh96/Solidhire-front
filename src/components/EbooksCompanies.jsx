@@ -8,7 +8,7 @@ const EbooksCompanies = () => {
     <div>
       <div>
         <div className="container mx-auto md:py-12 py-8 text-center">
-          <div className="container mx-auto p-3 text-center border-2">
+          <div className="container mx-auto p-3 text-center">
             <div className="flex flex-wrap justify-evenly items-center md:gap-2 gap-[1rem] mt-4 md:ml-0 md:px-0 px-[5rem]">
               <img src={logo1} className="w-24 md:w-32" alt="" />
               <img src={logo4} className="w-20 md:w-24" alt="" />
