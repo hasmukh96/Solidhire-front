@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "my-blog-backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,12 +9,11 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.15.5",
-    "@strapi/plugin-users-permissions": "4.15.5",
-    "@strapi/plugin-i18n": "4.15.5",
     "@strapi/plugin-cloud": "4.15.5",
+    "@strapi/plugin-i18n": "4.15.5",
+    "@strapi/plugin-users-permissions": "4.15.5",
+    "@strapi/strapi": "4.15.5",
     "better-sqlite3": "8.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -25,7 +24,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "c9bcecfb-c799-4242-9bc2-91d922648970"
+    "uuid": "2d5521b0-9cfd-45f2-98fa-9ad24fda8293"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
