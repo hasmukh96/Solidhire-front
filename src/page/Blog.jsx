@@ -20,7 +20,7 @@ const Blog = () => {
   // if (posts.length === 0) return null;
   // return <h1>Test</h1>;
   return (
-    <div className="flex flex-col justify-center items-center h-[100vh] gap-4">
+    <div className="flex flex-col justify-center items-center h-[100vh] gap-4 ">
       <p>Blog</p>
       <h1 className=" text-4xl font-black">Hiring Blog</h1>
       <p className="text-gray-500">
